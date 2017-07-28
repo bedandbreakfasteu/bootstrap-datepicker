@@ -1029,7 +1029,7 @@
 				var content = prevMonth.getUTCDate();
 
 				if (this.o.beforeShowDay !== $.noop){
-					before = this.o.beforeShowDay(this._utc_to_local(prevMonth));
+					before = this.o.beforeShowDay(this._utc_to_local(prevMonth), this.inputField);
 					if (before === undefined)
 						before = {};
 					else if (typeof before === 'boolean')
